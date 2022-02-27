@@ -1,0 +1,6 @@
+services:
+    DoubleStarSystems\Bundle\GoogleApiBundle\ClientFactory:
+        arguments: []
+    Google\Client:
+        factory:   ['@DoubleStarSystems\Bundle\GoogleApiBundle', createClient]
+        arguments: []
