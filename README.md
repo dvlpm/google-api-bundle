@@ -29,7 +29,8 @@ The following custom configuration can be added to your application.
 google_api:
     scopes:
         - https://www.googleapis.com/auth/drive
-    credential_file: `path/to/your/credentials.json`
+    credentials_file: `path/to/your/credentials.json`
+    token_file: `path/to/your/tokens.json`
     application_name: 'Your Awesome App Name!'
 ```
 

@@ -2,5 +2,10 @@ services:
     DoubleStarSystems\Bundle\GoogleApiBundle\ClientFactory:
         arguments: []
     Google\Client:
-        factory:   ['@DoubleStarSystems\Bundle\GoogleApiBundle', createClient]
+        factory:   ['@DoubleStarSystems\Bundle\GoogleApiBundle\ClientFactory', createClient]
         arguments: []
+
+    DoubleStarSystems\Bundle\GoogleApiBundle\Command\CreateTokenCommand:
+        arguments:
+            '$client': '@Google\Client'
+        tags: ['console.command']

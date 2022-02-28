@@ -16,9 +16,12 @@ class Configuration implements ConfigurationInterface
                 ->arrayNode('scopes')
                   ->prototype('scalar')->end()
                 ->end() // app
-                ->scalarNode('credential_file')
-                    ->defaultValue('%kernel.root_dir%/config/google_api_bundle/credentials.json')
-                ->end() //credential_file
+                ->scalarNode('credentials_file')
+                    ->defaultValue('%kernel.project_dir%/config/google_api_bundle/credentials.json')
+                ->end() //credentials_file
+                ->scalarNode('token_file')
+                    ->defaultValue('%kernel.project_dir%/var/google_api_bundle/token.json')
+                ->end() //token_file
                 ->scalarNode('application_name')
                     ->defaultValue('A Symfony Application')
                 ->end() //application_name
