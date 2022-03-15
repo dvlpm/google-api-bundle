@@ -20,7 +20,5 @@ class GoogleApiExtension extends Extension
         $container->getDefinition('DoubleStarSystems\Bundle\GoogleApiBundle\ClientFactory')
             ->setArguments([$config])
         ;
-        $command = $container->getDefinition('DoubleStarSystems\Bundle\GoogleApiBundle\Command\CreateTokenCommand');
-        $command->setArgument('$configuration', $config);
     }
 }
