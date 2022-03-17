@@ -10,7 +10,6 @@ class ClientFactory
   protected array $configuration;
 
   public function __construct(array $configuration) {
-      var_export($configuration);
     $this->configuration = $configuration;
   }
 
