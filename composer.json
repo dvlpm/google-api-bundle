@@ -2,12 +2,6 @@
     "name": "dvlpm/google-api-bundle",
     "description": "Google API Client Symfony Bundle",
     "type": "symfony-bundle",
-    "authors": [
-        {
-            "name": "Richard Gerdes",
-            "email": "rich@richgerdes.com"
-        }
-    ],
     "autoload": {
         "psr-4": { "DoubleStarSystems\\Bundle\\GoogleApiBundle\\": "src" }
     },
